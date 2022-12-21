@@ -1,0 +1,91 @@
+html, body {
+ background-color:   #2a2a2a ;
+width: 100%;
+height: 100%;
+}
+
+p, h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+    display: flex;
+    flex-flow: column wrap;
+column-gap: 0;
+height: 100vh;
+width: 1000px;
+margin: 0 auto;
+align-items: stretch;
+}
+
+
+.plants {
+height: 100vh;
+   width: 400px;
+background-image: url("plants.png");
+background-repeat: no-repeat;
+background-size:cover;
+
+
+}
+
+.top-text {
+height: 30vh;
+width: 35vw;
+    background-color:  #f7f7f7;
+   
+}
+
+.form-container {
+    height: 40vh;
+    width: 35vw;
+  background-color: white;
+display: flex;
+flex-flow: column nowrap;
+
+justify-content: flex-start;
+}
+
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    height: 50px;
+    column-gap: 20px;
+width: 30vw;
+margin: 20px auto 5px;
+align-items: center;
+}
+
+label > p {
+    font-size: 0.7rem;
+}
+
+.form-container > h2 {
+text-align: left;
+margin-left: 25px;
+}
+
+input {
+height: 25px;
+width: 12vw;
+border: #E5E7EB solid 2px;
+}
+
+.bottom {
+height: 30vh;
+width: 35vw;
+    background-color:  #f7f7f7 
+
+}
+
+.bottom > button {
+    background-color: #596D48;
+    color: white;
+    width: 160px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px 15px;
+    padding: 6px;
+    border:  #596D48 solid 2px;
+    border-radius: 10px;
+}
