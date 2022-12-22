@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
+  <div id="backg-color">
+    </div>
+      <img src="odin-lined.png" alt="odin logo" width="100" height="100">
+      <div class="img-txt"><h3>Odin</h3>
+      </div>
+   
 <div id="container">
         <div class="plants">
             <p>some text</p>
         </div>
+  
 <div class="top-text">
     <p style="margin-top: 50px; font-size: 16px; padding: 0 60px; font-weight: 550;">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <span style="font-style:italic;">now</span> to get started.</p>
 <p style="margin-top: 50px; font-size: 16px; padding: 0 60px; font-weight: 550;">You <span style="font-style:italic;">know</span> you want to.</p>
 </div>
 <div class="form-container">
 <h2>Let's do this!</h2>
-    <form name="sign-up" method="post">
+    <form name="sign-up" method="post" action="#" >
   <div class="field">
         <label for="first_name">
             <p>FIRST NAME</p>
@@ -52,23 +60,38 @@
           <div class="field">
             <label for="pwd">
           <p>PASSWORD</p>
-          <input type="password" id="pwd" name="password" />
+          <input type="password" id="pwd" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="" required/>
        
           </label>
-
+   
 
             <label for="pwd">
          <p>CONFIRM PASSWORD</p>
-            <input type="password" id="pwd" name="password" />
+            <input type="password" id="pwd2" name="passwordtwo" value="" oninput="checkPass();" required/>
           
             </label>
         </div>
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <div id="message-container">
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+      
+      </div>
+
+      <div id="error">
+        <p>Passwords don't match.</p>
+      </div>
       
 </div>
 <div class="bottom">
  
       
           <button type="submit">Create Account</button>
+        
     
    
       
