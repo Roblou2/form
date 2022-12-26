@@ -40,7 +40,7 @@ top: 11vh;
 left: 34vw;
   }
 
-#container {
+#container  {
     display: flex;
     flex-flow: column wrap;
 column-gap: 0;
