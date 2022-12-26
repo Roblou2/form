@@ -67,20 +67,4 @@ myInput.onkeyup = function() {
 
 //password match function
 
-function checkPass() {
-    let errorMsg = document.getElementById("error")
-    let pass1 = document.getElementById("pwd").value;
-    let pass2 = document.getElementById("pwd2").value;
-    if (pass1 !== pass2) {
- console.log(`hi`)
-        errorMsg.setAttribute('style', 'display: block;')
-        formContainer.style.height="42vh";
-        bottom.style.height="25vh";
-    }
-    else if (pass1 === pass2){
-        errorMsg.setAttribute('style', 'display: none;')
-        formContainer.style.height="40vh";
-        bottom.style.height="30vh";
-    }
-}
 
